@@ -16,7 +16,7 @@ const TopHeader = () => {
                             <p className='text-end text-white'>
                                 Hotline:{' '} 
                                 <a className='text-white' href="tel:+234 813 003 9337">
-                                    +234 813 003 9337
+                                    +232 233 000 3230
                                 </a>
                             </p>
                         </div>
