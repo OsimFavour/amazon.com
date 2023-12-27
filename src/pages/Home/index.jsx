@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import SmallBanner from './SmallBanner'
+import SecondBanner from './SecondBanner'
 
 const Home = () => {
     return (
@@ -10,8 +11,8 @@ const Home = () => {
                     <div className="row">
 
                         <div className="col-6">
-                            <div className="d-flex flex-wrap justify-content-between align-items-center">
-                                <div className="main-banner-content position-relative p-3">
+                           
+                                <div className="main-banner position-relative">
                                     <img 
                                         src="images/main-banner-1.jpg" 
                                         className='img-fluid rounded-3'
@@ -24,7 +25,7 @@ const Home = () => {
                                         <Link className='button'>BUY NOW</Link>
                                     </div>
                                 </div>
-                            </div>
+                            
                         </div>
 
                         <div className="col-6">
@@ -34,6 +35,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>   
+
+            <SecondBanner/>
         </>
     )
 }
