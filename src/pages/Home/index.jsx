@@ -1,42 +1,27 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import SmallBanner from './SmallBanner'
-import SecondBanner from './SecondBanner'
+import CategorySection from './CategorySection'
+import MarqueeSection from './MarqueeSection'
+import BlogSection from './BlogSection'
+import SecondBannerSection from './SecondBannerSection'
+import BannerSection from './BannerSection'
+import FeaturedSection from './FeaturedSection'
+
 
 const Home = () => {
     return (
         <>
-            <section className="home-wrapper-1 pt-3 py-5">
-                <div className="container">
-                    <div className="row">
+            <BannerSection/>  
 
-                        <div className="col-6">
-                           
-                                <div className="main-banner position-relative">
-                                    <img 
-                                        src="images/main-banner-1.jpg" 
-                                        className='img-fluid rounded-3'
-                                        alt="main banner" 
-                                    />
-                                    <div className="main-banner-content position-absolute">
-                                        <h4>Supercharged For Pros</h4>
-                                        <h5>iPad S13+ Pro.</h5>
-                                        <p>From $999.00 or $41.62/mo</p>
-                                        <Link className='button'>BUY NOW</Link>
-                                    </div>
-                                </div>
-                            
-                        </div>
+            <SecondBannerSection/>
 
-                        <div className="col-6">
-                           <SmallBanner/>
-                        </div>
+            <CategorySection/>
 
-                    </div>
-                </div>
-            </section>   
+            <MarqueeSection/>
 
-            <SecondBanner/>
+            <FeaturedSection/>
+
+            <BlogSection/>
+
         </>
     )
 }
