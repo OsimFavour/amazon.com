@@ -5,6 +5,9 @@ import BlogSection from './BlogSection'
 import SecondBannerSection from './SecondBannerSection'
 import BannerSection from './BannerSection'
 import FeaturedSection from './FeaturedSection'
+import SpecialProductSection from './SpecialProductSection'
+import PopularProductSection from './PopularProductSection'
+import BestSellingSection from './BestSellingSection'
 
 
 const Home = () => {
@@ -16,9 +19,15 @@ const Home = () => {
 
             <CategorySection/>
 
-            <MarqueeSection/>
-
             <FeaturedSection/>
+
+            <BestSellingSection/>
+
+            <SpecialProductSection/>
+
+            <PopularProductSection/>
+
+            <MarqueeSection/>
 
             <BlogSection/>
 
