@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BreadCrumb from '../../components/BreadCrumb'
 import Meta from '../../components/Meta'
 import StoreRandomProducts from './StoreRandomProducts'
@@ -10,6 +10,9 @@ import StoreProductsList from './StoreProductsList'
 
 
 const Store = () => {
+
+    const [grid, setGrid] = useState(4)
+
     return (
         <>
             <Meta title='Oui Store'/>
@@ -32,9 +35,11 @@ const Store = () => {
 
                         <div className="col-9">
 
-                            <StoreSortGrid/>
+                            <StoreSortGrid grid={grid} setGrid={setGrid}/>
 
-                            <StoreProductsList/>
+                            <StoreProductsList grid={grid}/>
+
+                            
                         </div>
 
                     </div>
