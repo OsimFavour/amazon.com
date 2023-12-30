@@ -1,13 +1,23 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
-const ProductCard = () => {
+const ProductCard = ({ grid }) => {
+    let location = useLocation()
     return (
-        <div className="col-3">
-            <div className="product-card position-relative">
+        <div 
+            className={`${location.pathname === '/store' ? `gr-${grid}` : 'col-lg-3 col-md-4 col-6 pb-2'}`}>
+            <Link className="product-card position-relative">
+
+                <div className="wishlist-icon position-absolute">
+                    <Link>
+                        <img src="images/wish.svg" alt="wishlist" />
+                    </Link>
+                </div>
+
                 <div className="product-image">
-                    <img className='image-width' src="images/watch.jpg" alt="product image" />
+                    <img src="images/watch.jpg" alt="" />
+                    <img src="images/watch2.png" alt="" />
                 </div>
 
                 <div className="product-details">
@@ -24,6 +34,15 @@ const ProductCard = () => {
                         edit={false}
                         activeColor="#ffd700"
                     />
+
+                    <p className={`description ${grid === 12 ? 'd-block' : 'd-none'}`}>
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip 
+                        ex ea commodo consequat.
+                    </p>
 
                     <p className="price">$100.00</p>
                 </div>
@@ -43,7 +62,7 @@ const ProductCard = () => {
                         </Link>
                     </div>    
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }
