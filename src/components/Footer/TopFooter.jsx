@@ -7,8 +7,8 @@ const TopFooter = () => {
                 <div className="row align-items-center">
                     <div className="col-5">
                         <div className="footer-top-data d-flex gap-30 align-items-center">
-                            <img src="images/newsletter.png" alt="newsletter" />
-                            <h2 className='mb-0 text-white'>Sign up for Newsletter</h2>
+                            <img src="images/newsletter.png" width='25px' alt="newsletter" />
+                            <h2 className='mb-0 text-white text-uppercase h-font'>Sign up for Newsletter</h2>
                         </div>
                     </div>
 
@@ -21,7 +21,7 @@ const TopFooter = () => {
                                 aria-label="Your Email Address" 
                                 aria-describedby="basic-addon2"
                             />
-                            <span className="input-group-text p-2" id="basic-addon2">
+                            <span className="input-group-text p-2 text-uppercase m-font" id="basic-addon2">
                                 Subscribe
                             </span>
                         
