@@ -11,10 +11,23 @@ const BlogSection = () => {
                             Our Latest News
                         </div>
                     </div>
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
+
+                    <div className="col-md-4 mb-5">
+                        <BlogCard/>
+                    </div>
+
+                    <div className="col-md-4 mb-5">
+                        <BlogCard/>
+                    </div>
+
+                    <div className="col-md-4 mb-5">
+                        <BlogCard/>
+                    </div>
+
+                    <div className="col-md-4 mb-5">
+                        <BlogCard/>
+                    </div>
+                    
                 </div>
             </div>
         </section>
