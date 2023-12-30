@@ -3,7 +3,7 @@ import React from 'react'
 const TopHeader = () => {
     return (
         <>
-            <header className="header-top-strip py-3">
+            <header className="header-top-strip py-2">
                 <div className="container">
                     <div className="row">
                         <div className="col-6">
