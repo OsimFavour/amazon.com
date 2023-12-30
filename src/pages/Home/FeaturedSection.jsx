@@ -3,13 +3,13 @@ import ProductCard from '../../components/ProductCard'
 
 const FeaturedSection = () => {
     return (
-        <section className="blog-wrapper py-5 home-wrapper-2">
+        <section className="featured-wrapper py-5 home-wrapper-2">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="section-heading">
+                        <h3 className="section-heading">
                             Our Featured Collection
-                        </div>
+                        </h3>
                     </div>
                     
                     <ProductCard/>
