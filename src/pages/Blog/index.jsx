@@ -25,7 +25,7 @@ const Blog = () => {
                         <div className="col-9">
                             <div className="row">
                                 
-                                <div className="col-6 mb-3">
+                                <div className="col-6 mb-4">
                                     <BlogCard/>
                                 </div>
 
