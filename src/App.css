@@ -150,6 +150,7 @@ a {
 
 /* HEADER END */
 
+/* ----------------------------------------------- */
 
 /* HOME PAGE START */
 
@@ -263,6 +264,9 @@ a {
 /* HOME PAGE END */
 
 
+/* ----------------------------------------------- */
+
+
 /* BLOG CARD START */
 
 .blog-card {
@@ -300,7 +304,27 @@ a {
   color: var(--color-777777);
 }
 
+.single-blog-card a {
+  font-size: 18px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+}
+
+.single-blog-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+}
+
+.single-blog-card p {
+  color: var(--color-777777);
+  font-size: 14px;
+}
+
 /* BLOG CARD END */
+
+
+/* ----------------------------------------------- */
 
 
 /* PRODUCT CARD START */
@@ -374,6 +398,9 @@ font-size: 13px;
 /* PRODUCT CARD END */
 
 
+/* ----------------------------------------------- */
+
+
 /* SPECIAL PRODUCT CARD START */
 
 .special-product-card {
@@ -387,6 +414,9 @@ font-size: 13px;
 } 
 
 /* SPECIAL PRODUCT CARD END */
+
+
+/* ----------------------------------------------- */
 
 
 /* FAMOUS BESTSELLING PRODUCT CARD START */
@@ -431,6 +461,9 @@ font-size: 13px;
 /* FAMOUS BESTSELLING PRODUCT CARD START */
 
 
+/* ----------------------------------------------- */
+
+
 /* FOOTER START */
 
 footer {
@@ -462,6 +495,9 @@ footer .input-group-text {
 }
 
 /* FOOTER END */
+
+
+/* ----------------------------------------------- */
 
 
 /* STORE START */
@@ -594,6 +630,24 @@ footer .input-group-text {
 /* STORE END */
 
 
+/* ----------------------------------------------- */
+
+
+/* PRODUCT VIEW START */
+
+.product-view {
+  background-color: #fff;
+  padding: 15px;
+  color: var(--color-777777);
+  font-size: 13px;
+}
+
+/* PRODUCT VIEW END */
+
+
+/* ----------------------------------------------- */
+
+
 /* CONTACT PAGE START */
 
 .contact-inner-wrapper {
@@ -639,3 +693,134 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 /* CONTACT PAGE END */
+
+
+/* ----------------------------------------------- */
+
+
+/* COMPARE PRODUCT PAGE & WISHLIST PAGE START */
+
+.compare-product-card,
+.wishlist-card-image {
+  padding: 20px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.compare-product-card .cross,
+.wishlist-card .cross {
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.compare-product-details h5.title, 
+.wishlist-card h5.title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--color-1c1c1b);
+}
+
+.compare-product-details h6.price, 
+.wishlist-card h6.price {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.compare-product-card .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* COMPARE PRODUCT PAGE & WISHLIST PAGE END */
+
+
+/* ----------------------------------------------- */
+
+
+/* AUTHENTICATION PAGES START */
+
+.auth-card {
+  padding: 20px;
+  background-color: #fff;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.auth-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-card p {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--color-777777);
+}
+
+.auth-card .form-control {
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.auth-card a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+
+.auth-card .signup {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+
+.auth-card .signup:hover {
+  background-color: var(--color-131921);
+  color: #fff;
+}
+
+/* AUTHENTICATION PAGES END */
+
+
+/* ----------------------------------------------- */
+
+
+/* POLICY PAGE START */
+
+.policy {
+  background-color: #fff;
+  padding: 30px;
+}
+
+/* POLICY PAGE END */
