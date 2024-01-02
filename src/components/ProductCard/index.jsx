@@ -7,7 +7,7 @@ const ProductCard = ({ grid }) => {
     return (
         <div 
             className={`${location.pathname === '/store' ? `gr-${grid}` : 'col-lg-3 col-md-4 col-6 pb-2'}`}>
-            <Link className="product-card position-relative">
+            <Link to='/product/:id' className="product-card position-relative">
 
                 <div className="wishlist-icon position-absolute">
                     <Link>
