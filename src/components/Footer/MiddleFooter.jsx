@@ -43,11 +43,11 @@ const MiddleFooter = () => {
                     <div className="col-3">
                         <h4 className='footer-header'>Information</h4>
                         <div className='d-flex flex-column'>
-                            <Link className='footer-link'>Privacy Policy</Link>
-                            <Link className='footer-link'>Refund Policy</Link>
-                            <Link className='footer-link'>Shipping Policy</Link>
-                            <Link className='footer-link'>Terms & Conditions</Link>
-                            <Link className='footer-link'>Blogs</Link>
+                            <Link to='/privacy-policy' className='footer-link'>Privacy Policy</Link>
+                            <Link to='/refund-policy' className='footer-link'>Refund Policy</Link>
+                            <Link to='/shipping-policy' className='footer-link'>Shipping Policy</Link>
+                            <Link to='/terms-and-conditions' className='footer-link'>Terms & Conditions</Link>
+                            <Link to='/blog' className='footer-link'>Blogs</Link>
                         </div>
                     </div>
 
