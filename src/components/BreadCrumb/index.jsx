@@ -10,7 +10,7 @@ const BreadCrumb = ({ title }) => {
                         <p className='text-center'>
                             <Link to='/' className='text-dark'>
                                 Home &nbsp;
-                            </Link> / {title}
+                            </Link> / <span className='fs-4 fw-bold'>{title}</span> 
                         </p>
                     </div>
                 </div>
