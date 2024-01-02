@@ -1,4 +1,5 @@
 import React from 'react'
+import Color from '../../components/Color'
 
 const StoreFilters = () => {
     return (
@@ -44,20 +45,7 @@ const StoreFilters = () => {
                 <h5 className="sub-title">Color</h5>
 
                 <div>
-                    <ul className="colors ps-0">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <Color/>
                 </div>
 
 
