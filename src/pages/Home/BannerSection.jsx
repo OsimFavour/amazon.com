@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const BannerSection = () => {
     return (
-        <section className="home-wrapper-1 pt-3 py-5">
+        <section className="home-wrapper-1 pt-5 py-5">
             <div className="container">
                 <div className="row">
 
@@ -12,7 +12,7 @@ const BannerSection = () => {
                         
                             <div className="main-banner position-relative">
                                 <img 
-                                    src="images/main-banner-1.jpg" 
+                                    src="images/new-banner.jpg" 
                                     className='img-fluid rounded-3'
                                     alt="main banner" 
                                 />
