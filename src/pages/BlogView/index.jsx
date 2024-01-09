@@ -4,6 +4,7 @@ import BreadCrumb from '../../components/BreadCrumb'
 import BlogCategories from '../Blog/BlogCategories'
 import { Link } from 'react-router-dom'
 import { FaLongArrowAltLeft } from 'react-icons/fa'
+import blog from '../../assets/images/blog.jpg'
 
 
 const BlogView = () => {
@@ -36,7 +37,7 @@ const BlogView = () => {
                                     A Beautiful Sunday Morning Renaissance
                                 </h3>
 
-                                <img src='images/blog-1.jpg' className='img-fluid w-100 my-4' alt='blog' />
+                                <img src={blog} className='img-fluid w-100 my-4' alt='blog' />
 
                                 <p>
                                     You're only as good as your last collection, 
