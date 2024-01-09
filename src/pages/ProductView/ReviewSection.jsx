@@ -16,7 +16,7 @@ const ReviewSection = () => {
 
                         <div>
                             <h3>Customer Reviews</h3>
-                            <div className='review-inner-wrapper'>
+                            <div className='review-inner-wrapper shadow'>
 
                                 <div className='review-header'>
                                     <div>
