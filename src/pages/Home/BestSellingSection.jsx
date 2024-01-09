@@ -6,7 +6,7 @@ const BestSellingSection = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-lg-3 pb-3">
-                        <div className="famous-card position-relative">
+                        <div className="famous-card shadow position-relative">
                             <img src="images/applewatch.jpg" width='100%' className='img-fluid' alt="apple watch"/>
                             <div className="famous-content position-absolute">
                                 <h5>Big Screen</h5>
@@ -17,7 +17,7 @@ const BestSellingSection = () => {
                     </div>
 
                     <div className="col-md-4 col-lg-3 pb-3">
-                        <div className="famous-card bg-white position-relative">
+                        <div className="famous-card bg-white shadow position-relative">
                             <img src="images/laptop2.jpg" width='100%' className='img-fluid' alt="apple watch"/>
                             <div className="famous-content position-absolute">
                                 <h5 className='text-dark'>Studio Display</h5>
@@ -28,7 +28,7 @@ const BestSellingSection = () => {
                     </div>
 
                     <div className="col-md-4 col-lg-3 pb-3">
-                        <div className="famous-card position-relative">
+                        <div className="famous-card shadow position-relative">
                             <img src="images/iphone.jpg" width='100%' className='img-fluid' alt="apple watch"/>
                             <div className="famous-content position-absolute">
                                 <h5 className='text-white'>Smartphones</h5>
@@ -39,7 +39,7 @@ const BestSellingSection = () => {
                     </div>
 
                     <div className="col-md-4 col-lg-3 pb-3">
-                        <div className="famous-card bg-dark position-relative">
+                        <div className="famous-card shadow bg-dark position-relative">
                             <img src="images/headphone2.jpg" width='100%' className='img-fluid' alt="apple watch"/>
                             <div className="famous-content position-absolute">
                                 <h5 className='text-white'>Home Speakers</h5>
