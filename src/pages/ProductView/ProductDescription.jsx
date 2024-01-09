@@ -9,7 +9,7 @@ const ProductDescription = () => {
                     
                     <div>
                         <h4>Description</h4>
-                        <p>
+                        <p className='shadow'>
                             'At vero eos et accusamus et iusto odio dignissimos 
                             ducimus qui blanditiis praesentium voluptatum deleniti 
                             atque corrupti quos dolores et quas molestias excepturi
