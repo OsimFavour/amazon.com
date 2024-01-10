@@ -3,6 +3,7 @@ import Meta from '../../components/Meta'
 import BreadCrumb from '../../components/BreadCrumb'
 import Color from '../../components/Color'
 import CompareProductCard from './CompareProductCard'
+import Container from '../../components/Container'
 
 
 const CompareProduct = () => {
@@ -11,8 +12,7 @@ const CompareProduct = () => {
       <Meta title='Compare Products'/>
       <BreadCrumb title='Compare Products'/>
 
-      <div className="compare-product-wrapper py-5 home-wrapper-2">
-        <div className="container">
+      <Container class1="compare-product-wrapper py-5 home-wrapper-2">
           <div className="row">
 
             <CompareProductCard/>
@@ -21,8 +21,7 @@ const CompareProduct = () => {
 
             
           </div>
-        </div>
-      </div>
+      </Container>
 
     </>
   )
