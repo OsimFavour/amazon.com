@@ -1,12 +1,13 @@
 import React from 'react'
 import ContactInformation from './ContactInformation'
 import ProductDisplay from './ProductDisplay'
+import Container from '../../components/Container'
 
 const Checkout = () => {
     return (
         <>
 
-            <div className='checkout-wrapper py-5 home-wrapper-2'>
+            <Container className='checkout-wrapper py-5 home-wrapper-2'>
                 <div className='container-xl'>
                     <div className='row'>
 
@@ -19,7 +20,7 @@ const Checkout = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
 
         </>
     )
