@@ -16,25 +16,25 @@ const MiddleFooter = () => {
                                 15 Afukang Lane, <br /> Sunny Vale <br /> Postal Code: 580311
                             </address>
 
-                            <a href="tel:+233 678 493 4394" className='mt-3 d-block mb-1 text-white m-font'>
-                            +233 678 493 4394
-                            </a>
+                            <Link to="tel:+233 678 493 4394" className='mt-3 d-block mb-1 text-white m-font'>
+                                +233 678 493 4394
+                            </Link>
 
-                            <a href="mailto:balablue@gmail.com" className='mt-2 d-block mb-0 text-white mb-4 m-font'>balared@gmail.com</a>
+                            <Link to="mailto:balablue@gmail.com" className='mt-2 d-block mb-0 text-white mb-4 m-font'>balared@gmail.com</Link>
                             
                             <div className="social-icons d-flex align-items-center gap-30">
-                                <a className='text-white' href="#">
+                                <Link to="#" className='text-white'>
                                     <BsLinkedin className='fs-5'/>
-                                </a>
-                                <a className='text-white' href="#">
+                                </Link>
+                                <Link to="#" className='text-white'>
                                    <BsInstagram className='fs-5'/> 
-                                </a>
-                                <a className='text-white' href="#">
+                                </Link>
+                                <Link to="#" className='text-white'>
                                    <BsGithub className='fs-5'/> 
-                                </a>
-                                <a className='text-white' href="#">
+                                </Link>
+                                <Link to="#" className='text-white'>
                                    <BsYoutube className='fs-5'/> 
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
