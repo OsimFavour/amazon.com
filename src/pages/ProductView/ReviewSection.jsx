@@ -3,14 +3,15 @@ import ReactStars from 'react-rating-stars-component'
 import ReviewForm from './ReviewForm'
 import UserReview from './UserReview'
 import { Link } from 'react-router-dom'
+import Container from '../../components/Container'
 
 const ReviewSection = () => {
 
     const [orderedProduct, setOrderedProduct] = useState(true)
     
     return (
-        <section className='review-wrapper home-wrapper-2'>
-            <div className='container'>
+        <Container class1='review-wrapper home-wrapper-2'>
+          
                 <div className='row'>
                     <div className='col-12'>
 
@@ -51,8 +52,8 @@ const ReviewSection = () => {
 
                     </div>
                 </div>
-            </div>
-        </section>
+            
+        </Container>
     )
 }
 
