@@ -1,4 +1,5 @@
 import React from 'react'
+import newsletter from '../../assets/images/newsletter.png'
 
 const TopFooter = () => {
     return (
@@ -7,7 +8,7 @@ const TopFooter = () => {
                 <div className="row align-items-center">
                     <div className="col-5">
                         <div className="footer-top-data d-flex gap-30 align-items-center">
-                            <img src="images/newsletter.png" width='25px' alt="newsletter" />
+                            <img src={newsletter} width='25px' alt="newsletter" />
                             <h2 className='mb-0 text-white text-uppercase h-font'>Sign up for Newsletter</h2>
                         </div>
                     </div>
