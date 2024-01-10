@@ -2,6 +2,7 @@ import React from 'react'
 import Meta from '../../components/Meta'
 import BreadCrumb from '../../components/BreadCrumb'
 import WishlistProductCard from './WishlistProductCard'
+import Container from '../../components/Container'
 
 
 const Wishlist = () => {
@@ -12,8 +13,8 @@ const Wishlist = () => {
             <Meta title='Wishlist'/>
             <BreadCrumb title='Wishlist'/>
 
-            <div className="wishlist-wrapper home-wrapper-2 py-5">
-                <div className="container">
+            <Container class1="wishlist-wrapper home-wrapper-2 py-5">
+               
                     <div className="row">
 
                         <WishlistProductCard/>
@@ -21,8 +22,8 @@ const Wishlist = () => {
                         <WishlistProductCard/>
 
                     </div>
-                </div>
-            </div>
+                    
+            </Container>
         </>
     )
 }
