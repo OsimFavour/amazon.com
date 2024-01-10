@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const SpecialProductCard = () => {
     return (
         <div className="col-lg-4 col-md-6 pb-3">
-            <div className="special-product-card">
+            <div className="special-product-card shadow">
                 <div className="d-flex justify-content-between">
                     <div>
                         <img src="images/tab.jpg" width='100%' className='img-fluid' alt="watch" />
