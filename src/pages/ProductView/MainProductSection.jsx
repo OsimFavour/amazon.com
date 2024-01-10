@@ -5,6 +5,7 @@ import Color from '../../components/Color';
 import MainProductImage from './MainProductImage';
 import { GoGitCompare } from 'react-icons/go'
 import { MdFavoriteBorder } from 'react-icons/md'
+import Container from '../../components/Container';
 
 
 const MainProductSection = () => {
@@ -26,8 +27,8 @@ const MainProductSection = () => {
 
 
     return (
-        <div className='main-product-wrapper py-5 home-wrapper-2'>
-            <div className='container'>
+        <Container class1='main-product-wrapper py-5 home-wrapper-2'>
+           
                 <div className='row main-product shadow'>
                    <MainProductImage/>
 
@@ -150,8 +151,8 @@ const MainProductSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+        </Container>
     )
 }
 
