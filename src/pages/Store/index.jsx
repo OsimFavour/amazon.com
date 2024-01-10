@@ -7,6 +7,7 @@ import StoreFilters from './StoreFilters'
 import StoreProductTags from './StoreProductTags'
 import StoreSortGrid from './StoreSortGrid'
 import StoreProductsList from './StoreProductsList'
+import Container from '../../components/Container'
 
 
 const Store = () => {
@@ -18,8 +19,8 @@ const Store = () => {
             <Meta title='Oui Store'/>
             <BreadCrumb title='Our Store'/>
 
-            <div className="store-wrapper home-wrapper-2 py-5">
-                <div className="container">
+            <Container class1="store-wrapper home-wrapper-2 py-5">
+                
                     <div className="row">
 
                         <div className="col-3">
@@ -43,8 +44,8 @@ const Store = () => {
                         </div>
 
                     </div>
-                </div>
-            </div>
+                
+            </Container>
         </>
     )
 }
