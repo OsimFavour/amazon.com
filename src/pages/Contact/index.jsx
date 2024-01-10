@@ -3,6 +3,7 @@ import Meta from '../../components/Meta'
 import BreadCrumb from '../../components/BreadCrumb'
 import MapLocation from './MapLocation'
 import ContactForm from './ContactForm'
+import Container from '../../components/Container'
 
 
 const Contact = () => {
@@ -12,16 +13,14 @@ const Contact = () => {
             <Meta title='Contact Us'/>
             <BreadCrumb title='Contact Us'/>
 
-            <div className="contact-wrapper py-5 home-wrapper-2">
-                <div className="container">
-                    <div className="row">
-                        
-                        <MapLocation/>
+            <Container class1="contact-wrapper py-5 home-wrapper-2">
+                <div className="row">
+                    
+                    <MapLocation/>
 
-                        <ContactForm/>
-                    </div>
+                    <ContactForm/>
                 </div>
-            </div>
+            </Container>
 
         </>
     )
