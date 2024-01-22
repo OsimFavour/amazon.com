@@ -1,7 +1,19 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { logoutUser } from '../../features/user/userSlice'
+import { useDispatch } from 'react-redux'
 
 const BottomHeader = () => {
+
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+
+    const handleLogout = () => {
+        dispatch(logoutUser)
+        navigate('/')
+    }
+
     return (
         <header className="header-bottom py-3">
             <div className="container">
@@ -38,6 +50,7 @@ const BottomHeader = () => {
                                     <NavLink to='/product'>Our Store</NavLink>
                                     <NavLink to='/blog'>Blogs</NavLink>
                                     <NavLink to='/contact'>Contact</NavLink>
+                                    <NavLink to='' onClick={handleLogout}>Logout</NavLink>
                                 </div>
                             </div>
 
