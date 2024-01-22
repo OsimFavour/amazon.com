@@ -662,7 +662,7 @@ footer .input-group-text {
 .review-header {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 20px;
 }
@@ -1028,25 +1028,36 @@ footer .input-group-text {
   color: var(--color-1c1c1b);
 }
 
-/* CART PAGE END */
+/* 
+======================== 
+CART PAGE END
+========================
+*/
 
 
-/* ----------------------------------------------- */
-
-
-/* CHECKOUT PAGE START */
+/* 
+======================== 
+CHECKOUT PAGE START
+========================
+*/
 
 .breadcrumb-item a {
   color: var(--color-777777);
 }
 
-/* CHECKOUT PAGE END */
+/* 
+======================== 
+CHECKOUT PAGE END
+========================
+*/
 
 
-/* ----------------------------------------------- */
 
-
-/* SHIPPING PAGE START */
+/* 
+======================== 
+SHIPPING PAGE START
+========================
+*/
 
 .total {
   font-size: 14px;
@@ -1058,4 +1069,21 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 
-/* SHIPPING PAGE END */
+/* 
+======================== 
+SHIPPING PAGE END
+========================
+*/
+
+
+
+/* 
+======================== 
+FORMIK VALIDATION
+========================
+*/
+
+.error {
+  color: #ff0000;
+  font-size: 13px;
+}
