@@ -6,9 +6,36 @@ import Container from '../../components/Container'
 import CustomInput from '../../components/CustomInput'
 import { useFormik } from 'formik'
 import * as yup from 'yup'
+import { loginUser } from '../../features/user/userSlice'
+import { useDispatch } from 'react-redux'
+
+
+const loginSchema = yup.object({
+    email: yup
+    .string()
+    .email('Email Should Be Valid')
+    .required('Email Address is Required'),
+    password: yup.string().required('Password is Required'),
+  });
 
 
 const Login = () => {
+
+    const dispatch = useDispatch()
+    const formik = useFormik({
+        initialValues: {
+            email_or_phone: '',   
+            password: '',
+        },
+        validationSchema: loginSchema,
+        onSubmit: values => {
+            console.log(formik.values)
+            dispatch(loginUser(values))
+          
+        },
+    });
+
+
     return (
         <>
             <Meta title='Login'/>
@@ -20,11 +47,43 @@ const Login = () => {
                     <div className='col-12'>
                         <div className='auth-card'>
                             <h3>Login</h3>
-                            <form action='' className='auth-form'>
-                                <CustomInput type='email' name='email' placeholder='Email'/>
+                            <form 
+                                action='' 
+                                className='auth-form'
+                                onSubmit={formik.handleSubmit}
+                            >
 
-                                <CustomInput type='password' name='password' placeholder='Password' className='mt-1'/>
-                                
+
+                                <CustomInput 
+                                    type='email' 
+                                    name='email' 
+                                    placeholder='Email or Phone Number' 
+                                    value={formik.values.email_or_phone}
+                                    onChange={formik.handleChange('email_or_phone')}
+                                    onBlur={formik.handleBlur('email_or_phone')}
+                                />
+
+                                <div className="error">
+                                    {formik.touched.email_or_phone && formik.errors.email_or_phone}
+                                </div>
+
+                                {formik.values.email_or_phone}
+
+                                <CustomInput 
+                                    type='password' 
+                                    name='password' 
+                                    placeholder='Password'
+                                    value={formik.values.password}
+                                    onChange={formik.handleChange('password')}
+                                    onBlur={formik.handleBlur('password')}
+                                />
+
+                                    {formik.values.password}
+                                <div className="error">
+                                    {formik.touched.password && formik.errors.password}
+                                </div>
+
+
                                 <div>
                                     <Link to='/forgot-password'>
                                         Forgot Password
