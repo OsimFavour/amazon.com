@@ -7,21 +7,24 @@ import { useFormik } from 'formik'
 import * as yup from 'yup'
 import { useDispatch } from 'react-redux'
 import { registerUser } from '../../features/user/userSlice'
+import { useNavigate } from 'react-router-dom'
 
 
 const signUpSchema = yup.object({
     first_name: yup.string().required('First Name is Required'),
     last_name: yup.string().required('Last Name is Required'),
     password: yup.string().required('Password is Required'),
-    email: yup.string().required().email('Email Should Be Valid'),
+    email: yup.string().email('Email Should Be Valid').required('Email Address is Required'),
     phone_no: yup.string().required('Phone Number is Required'),
-  });
+});
 
 
 
 const SignUp = () => {
 
+    const navigate = useNavigate()
     const dispatch = useDispatch()
+
     const formik = useFormik({
         initialValues: {                             
             first_name: '',
@@ -33,9 +36,17 @@ const SignUp = () => {
         validationSchema: signUpSchema,
         onSubmit: values => {
           dispatch(registerUser(values))
+
+          setTimeout(() => {
+            navigate('/login')
+          }, 30000)
+          
         },
     });
 
+    // useEffect(() => {
+    //     return () => clearTimeout(timeoutId);
+    //   }, []);
 
     return (
         <>
