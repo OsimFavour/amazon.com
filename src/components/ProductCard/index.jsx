@@ -14,7 +14,7 @@ const ProductCard = ({ grid }) => {
     return (
         <div 
             className={`${location.pathname === '/product' ? `gr-${grid}` : 'col-lg-3 col-md-4 col-6 pb-2'}`}>
-            <Link 
+            <Link
                 to={`${
                     location.pathname == '/' 
                     ? '/product/:id' 
