@@ -1,22 +1,23 @@
 import React from 'react'
-import Meta from '../../components/Meta'
-import BreadCrumb from '../../components/BreadCrumb'
-import { Link } from 'react-router-dom'
-import Container from '../../components/Container'
-import CustomInput from '../../components/CustomInput'
-import { useFormik } from 'formik'
 import * as yup from 'yup'
-import { loginUser } from '../../features/user/userSlice'
+import { useFormik } from 'formik'
+import { Link } from 'react-router-dom'
+import Meta from '../../components/Meta'
 import { useDispatch } from 'react-redux'
+import Container from '../../components/Container'
+import BreadCrumb from '../../components/BreadCrumb'
+import CustomInput from '../../components/CustomInput'
+import { loginUser } from '../../features/user/userSlice'
+
 
 
 const loginSchema = yup.object({
-    email: yup
+    email_or_phone: yup
     .string()
     .email('Email Should Be Valid')
     .required('Email Address is Required'),
     password: yup.string().required('Password is Required'),
-  });
+})
 
 
 const Login = () => {
