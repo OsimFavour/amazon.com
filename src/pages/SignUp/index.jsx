@@ -1,13 +1,13 @@
 import React from 'react'
-import Meta from '../../components/Meta'
-import BreadCrumb from '../../components/BreadCrumb'
-import Container from '../../components/Container'
-import CustomInput from '../../components/CustomInput'
-import { useFormik } from 'formik'
 import * as yup from 'yup'
+import { useFormik } from 'formik'
+import Meta from '../../components/Meta'
 import { useDispatch } from 'react-redux'
-import { registerUser } from '../../features/user/userSlice'
 import { useNavigate } from 'react-router-dom'
+import Container from '../../components/Container'
+import BreadCrumb from '../../components/BreadCrumb'
+import CustomInput from '../../components/CustomInput'
+import { registerUser } from '../../features/user/userSlice'
 
 
 const signUpSchema = yup.object({
